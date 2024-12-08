@@ -101,3 +101,32 @@ a.navbar-brand {
     background: #E73C3E;
     color: white;
 }
+
+/* Footer */
+
+.footer {
+    background: #ffcccb;
+    padding: 19px;
+    text-align: center;
+}
+.logo {
+    margin-top: 33px;
+}
+.logo h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.logo p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact ul li {
+    list-style: none;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+}
