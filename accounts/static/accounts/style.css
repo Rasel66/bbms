@@ -130,3 +130,26 @@ a.navbar-brand {
     color: black;
     text-decoration: none;
 }
+
+
+/* why donate blood */
+.left h4 {
+    color: #EB6864;
+}
+
+.text dl dd {
+    text-align: justify;
+}
+.text dl dt {
+    color: #EB6864;
+}
+button {
+    background-color: #EB6864;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}

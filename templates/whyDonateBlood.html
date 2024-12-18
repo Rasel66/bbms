@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+<div class="whyDonateBlood">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left">
+                        <h4 class="fw-bold mt-3">Why Donate Blood?</h4>
+                        <hr>
+                        <div class="text">
+                            <p>Donating blood is a powerful way to make a positive impact on people's lives and our community. Here are some key reasons why we should consider donating blood:</p>
+                            <dl>
+                                <dt>Save Lives</dt>
+                                <dd>- <b>One donation can save up to three lives:</b> Your blood is separated into components like red cells, plasma, and platelets, which can be used to treat different patients.</dd>
+                                <dd>- It’s essential for emergencies, surgeries, cancer treatments, and managing chronic conditions.</dd>
+
+                                <dt>Improve Our Own Health</dt>
+                                <dd>- <b>Free health check-up:</b> Blood donation sessions include screening for diseases like HIV, hepatitis, and anemia, giving you insights into your health.</dd>
+
+                                <dt>Help Patients in Need</dt>
+                                <dd>- <b>Blood cannot be manufactured:</b> Hospitals and medical facilities rely entirely on voluntary donations.</dd>
+                                <dd>- People with conditions like anemia, trauma victims, and those undergoing surgery or chemotherapy often need transfusions to survive.</dd>
+
+                                <dt>Inspire Others</dt>
+                                <dd>- By donating, you set an example for your friends and family, encouraging more people to join the cause.</dd>
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right mt-5">
+                        <img src="{% static 'accounts/images/Blood-1.png' %}" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
