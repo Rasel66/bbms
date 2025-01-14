@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib import messages
-from .forms import CustomUserCreationForm, BecomeDonorForm
+from .forms import CustomUserCreationForm, DonorForm
 
 
 def homePage(request):
@@ -23,10 +23,10 @@ def register_view(request):
 def whyDonateBloodPage(request):
     return render(request, 'whyDonateBlood.html')
 
-def becomeDonor(request):
-    form = BecomeDonorForm()
+def donor_views(request):
+    form = DonorForm()
     if request.method == "POST":
-        form = BecomeDonorForm(request.POST)
+        form = DonorForm(request.POST)
         if form.is_valid():
             form.save()
         

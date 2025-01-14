@@ -1,27 +1,16 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+from .choices import GENDER_CHOICES, BLOOD_GROUP_CHOICES, USER_TYPES
 
 #Create your models here.
 
-GENDER_CHOICES = [
-    ('', "--SELECT--"),
-    ('male', "Male"),
-    ('female', "Female"),
-    ('others', "Others")
-]
+class CustomUser(AbstractUser):
+    user_type = models.CharField(max_length=10, choices=USER_TYPES, default='donor')
 
-BLOOD_GROUP_CHOICES = [
-    ('', '--SELECT--'),
-    ('A+', 'A+'),
-    ('A-', 'A-'),
-    ('B+', 'B+'),
-    ('B-', 'B-'),
-    ('AB+', 'AB+'),
-    ('AB-', 'AB-'),
-    ('O+', 'O+'),
-    ('O-', 'O-'),
-]
+    def __str__(self):
+        return f"{self.user_type}"
 
-class BecomeDonor(models.Model):
+class Donor(models.Model):
     name = models.CharField(max_length=100)
     phn_no = models.CharField(max_length=20)
     email = models.EmailField()
